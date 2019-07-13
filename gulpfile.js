@@ -63,7 +63,7 @@ gulp.task('watch', () => {
       }
    });
    gulp.watch('./src/img/**', gulp.series('img-compress'))
-   gulp.watch('./src/css/**/*.styl', gulp.series('styles'))
+   gulp.watch('./src/css/**/*.sass', gulp.series('styles'))
    gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
    gulp.watch("./*.html").on('change', browserSync.reload);
 });
